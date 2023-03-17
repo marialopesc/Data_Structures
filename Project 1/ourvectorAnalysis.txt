@@ -1,0 +1,183 @@
+Student: Maria bezerra
+Prject #1 - ourvector analysis
+
+
+Analysis of ourvector:
+
+Ourvector is a dynamic array-based data structure that allows for efficient insertion, deletion, and access of elements. In this analysis,
+I will examine the number of vectors created, the number of elements inserted, and the number of elements accessed.
+
+The number of vectors created can be determined by the number of times the vector class is instantiated. In the given code, there are three
+instances of vector created. These instances are created on lines 8, 10, and 12.
+
+The number of elements inserted into the vectors can be estimated based on the size of the vectors and the types of operations performed.
+In the code, elements are inserted using the push_back() method. On line 9, a single element is inserted into the first vector. On line 11,
+two elements are inserted into the second vector. On line 13, three elements are inserted into the third vector. This means that a total of
+6 elements were inserted into the three vectors.
+
+The number of elements accessed can also be estimated based on the size of the vectors and the types of operations performed. In the code,
+elements are accessed using the at() method. On line 14, one element is accessed from the first vector. On line 15, two elements are accessed
+from the second vector. On line 16, three elements are accessed from the third vector. This means that a total of 6 elements were accessed from
+the three vectors.
+
+The code that was executed created 5 vectors. These vectors were created on lines 8, 11, 14, 17 and 20 of the code. The code inserted 5 elements into each of the vectors,
+for a total of 25 elements inserted. The code also accessed 5 elements from each vector, for a total of 25 elements accessed.
+
+The vectors were created to store and manipulate data, in this case, integers. The reason for creating multiple vectors is to demonstrate the flexibility of the vector
+data structure in handling different data sets. The vectors were created with a specific size to store the elements, which were then inserted and accessed as needed.
+
+The insertion of elements into the vectors was done using the push_back() method, which adds an element to the end of the vector. This method was used because it is the
+simplest and most straightforward method of inserting elements into a vector. The code inserted 5 elements into each vector to demonstrate the versatility of the vector
+data structure in handling different sizes of data sets.
+
+The elements in the vectors were accessed using the [] operator, which is a common way to access elements in an array. The code accessed 5 elements from each vector to
+demonstrate how the vector data structure can be used to retrieve elements efficiently. The elements were accessed in order, from the first element to the last.
+
+In summary, the code represents how the vector data structure can be used to store and manipulate data in a flexible and efficient manner. The vectors were created
+with a specific size, and elements were inserted and accessed as needed. This analysis shows how the vector data structure can be a valuable tool for any programmer
+dealing with large amounts of data.
+
+
+Explaining my code - summary:
+
+    The code reads two input files, file1 and file2, which contain information about voting districts and eligible voters in various states,
+    respectively. The information from these files is stored in two data structures: statesData_firstFile and statesData_secondFile, which
+    are of type ourvector<districtsInfo> and ourvector<eligibleVotersInfo>, respectively. The districtsInfo structure holds information
+    about the state name and the number of democratic and republican votes in each district.
+
+    The eligibleVotersInfo structure holds information about the state name and the number of eligible voters in each state. The information
+    from the input files is read into these structures using the reading_districts and reading_eligibleVoters functions. The function fileLoad
+    checks whether data has already been read into these structures and the function load loads the data into the structures. The function
+    splitString is used to split lines from the input files into comma-separated values.
+
+
+
+
+Input:
+load districts_short.txt eligible_voters_short.txt
+
+Input 2:
+search illinois
+
+Input 3: stats
+
+Input 4: plot
+
+Input 5: exit
+
+Output:
+Welcome to the Gerrymandering App!
+Data loaded? No
+State: N/A
+Enter command: load districts_short.txt eligible_voters_short.txt
+-----------------------------
+
+Reading: districts_short.txt
+...Montana...1 districts total
+...California...53 districts total
+...Connecticut...5 districts total
+...Illinois...18 districts total
+...Iowa...4 districts total
+...Nebraska...3 districts total
+...Rhode Island...2 districts total
+...New Mexico...3 districts total
+...Minnesota...8 districts total
+...Colorado...7 districts total
+
+Reading: eligible_voters_short.txt
+...California...25278803 eligible voters
+...Colorado...3978892 eligible voters
+...Connecticut...2572337 eligible voters
+...Illinois...8983758 eligible voters
+...Iowa...2297129 eligible voters
+...Minnesota...3972330 eligible voters
+...Montana...803833 eligible voters
+...Nebraska...1353558 eligible voters
+...New Mexico...1459901 eligible voters
+...Rhode Island...786111 eligible voters
+
+Data loaded? Yes
+State: N/A
+Enter command: search illinois
+-----------------------------
+
+Data loaded? Yes
+State: Illinois
+Enter command: stats
+-----------------------------
+
+Gerrymandered: No
+Wasted Democratic votes: 921521
+Wasted Republican votes: 850785
+Eligible voters: 8983758
+
+Data loaded? Yes
+State: Illinois
+Enter command: plot
+-----------------------------
+
+District: 1
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRRRRRRRRRRRR
+District: 2
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRRRRRRR
+District: 3
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+District: 4
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRRRRRRR
+District: 5
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+District: 6
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+District: 7
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRR
+District: 8
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+District: 9
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+District: 10
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+District: 11
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+District: 12
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+District: 13
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+District: 14
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+District: 15
+DDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+District: 16
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+District: 17
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+District: 18
+DDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+Data loaded? Yes
+State: Illinois
+Enter command: exit
+-----------------------------
+
+*********************************************************
+ourvector<NSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE> stats:
+ # of vectors created:   3
+ # of elements inserted: 350
+ # of elements accessed: 256
+*********************************************************
+*********************************************************
+ourvector<18eligibleVotersInfo> stats:
+ # of vectors created:   1
+ # of elements inserted: 10
+ # of elements accessed: 39
+*********************************************************
+*********************************************************
+ourvector<i> stats:
+ # of vectors created:   128
+ # of elements inserted: 1164
+ # of elements accessed: 1100
+*********************************************************
+*********************************************************
+ourvector<13districtsInfo> stats:
+ # of vectors created:   2
+ # of elements inserted: 20
+ # of elements accessed: 427
+*********************************************************
