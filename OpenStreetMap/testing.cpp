@@ -1,18 +1,3 @@
-// testing.cpp <Starter Code>
-// <Your name>
-//
-// Adam T Koehler, PhD
-// University of Illinois Chicago
-// CS 251, Spring 2023
-//
-// Project Original Variartion By:
-// Joe Hummel, PhD
-// University of Illinois at Chicago
-//
-// This file is used for testing graph.h.  We encourage you to use Google's
-// test framework for this project, but it is not required (because we will
-// not be grading the tests file).  
-//
 
 #include <iostream>
 #include <vector>
