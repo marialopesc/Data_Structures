@@ -1,24 +1,4 @@
-/*osm.cpp*/
 
-//
-// Adam T Koehler, PhD
-// University of Illinois Chicago
-// CS 251, Fall 2022
-//
-// Project Original Variartion By:
-// Joe Hummel, PhD
-// University of Illinois at Chicago
-// 
-// References:
-// TinyXML: https://github.com/leethomason/tinyxml2
-// OpenStreetMap: https://www.openstreetmap.org
-// OpenStreetMap docs:  
-//   https://wiki.openstreetmap.org/wiki/Main_Page
-//   https://wiki.openstreetmap.org/wiki/Map_Features
-//   https://wiki.openstreetmap.org/wiki/Node
-//   https://wiki.openstreetmap.org/wiki/Way
-//   https://wiki.openstreetmap.org/wiki/Relation
-//
 
 #include <iostream>
 #include <string>
