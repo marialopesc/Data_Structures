@@ -1,16 +1,4 @@
-// application.cpp <Starter Code>
-// Maria Bezerra
-//
-//
-// Adam T Koehler, PhD
-// University of Illinois Chicago
-// CS 251, Spring 2023
-//
-// Project Original Variartion By:
-// Joe Hummel, PhD
-// University of Illinois at Chicago
-//
-// 
+
 // References:
 // TinyXML: https://github.com/leethomason/tinyxml2
 // OpenStreetMap: https://www.openstreetmap.org
