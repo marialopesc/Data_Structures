@@ -1,18 +1,3 @@
-// graph.h <Starter Code>
-// Maria Bezerra
-//
-// Basic graph class using adjacency matrix representation.  Currently
-// limited to a graph with at most 100 vertices.
-//
-//
-// Adam T Koehler, PhD
-// University of Illinois Chicago
-// CS 251, Spring 2023
-//
-// Project Original Variartion By:
-// Joe Hummel, PhD
-// University of Illinois at Chicago
-//
 
 #pragma once
 
